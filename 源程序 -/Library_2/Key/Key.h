@@ -1,0 +1,14 @@
+#ifndef __KEY_H
+#define __KEY_H	 
+#include "sys.h"
+
+#define KEY_time  GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_15)		 //µÆ¿ª¹ØÇÐ»»
+#define KEY1_add  GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_13)		 //ÁÁ¶ÈÇÐ»»
+#define KEY1_del  GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_14)		 //ÑÕÉ«ÇÐ»»
+#define KEY_set		GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_12)		 //ÑÕÉ«ÇÐ»»
+#define HC_SR501   GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_7)
+
+void Key_Init(void);//³õÊ¼»¯
+
+		 				    
+#endif
